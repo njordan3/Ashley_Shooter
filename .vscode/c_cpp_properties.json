@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Ashley_ShooterEditor Editor Win64 Development (Ashley_Shooter)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Ashley_Shooter.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Win32",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,47 @@
+[
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Ashley_Shooter.Build.cs",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Ashley_Shooter.cpp",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Ashley_Shooter.h",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Setup\\\\Ashley_ShooterGameModeBase.cpp",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Setup\\\\Ashley_ShooterGameModeBase.h",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Witch\\\\Guns\\\\GunBase.cpp",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Witch\\\\Guns\\\\GunBase.h",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Witch\\\\Witch.cpp",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal_Projects\\\\Ashley_Shooter\\\\Source\\\\Ashley_Shooter\\\\Witch\\\\Witch.h",
+		"command": "cl.exe @\"D:\\Unreal_Projects\\Ashley_Shooter\\.vscode\\compileCommands_Default\\Ashley_Shooter.182.rsp\"",
+		"directory": "D:\\UE_4.26\\Engine\\Source"
+	}
+]

@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Ashley_Shooter (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Ashley_Shooter Win64 Debug Build",
+			"program": "D:\\Unreal_Projects\\Ashley_Shooter\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Ashley_Shooter (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Ashley_Shooter Win64 DebugGame Build",
+			"program": "D:\\Unreal_Projects\\Ashley_Shooter\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Ashley_Shooter (Development)",
+			"request": "launch",
+			"preLaunchTask": "Ashley_Shooter Win64 Development Build",
+			"program": "D:\\Unreal_Projects\\Ashley_Shooter\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Ashley_Shooter (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Ashley_Shooter Win64 Shipping Build",
+			"program": "D:\\Unreal_Projects\\Ashley_Shooter\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Ashley_Shooter (Test)",
+			"request": "launch",
+			"preLaunchTask": "Ashley_Shooter Win64 Test Build",
+			"program": "D:\\Unreal_Projects\\Ashley_Shooter\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "D:\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Ashley_ShooterEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Ashley_ShooterEditor Win64 Debug Build",
+			"program": "D:\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"D:\\Unreal_Projects\\Ashley_Shooter\\Ashley_Shooter.uproject"
+			],
+			"cwd": "D:\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Ashley_ShooterEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Ashley_ShooterEditor Win64 DebugGame Build",
+			"program": "D:\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"D:\\Unreal_Projects\\Ashley_Shooter\\Ashley_Shooter.uproject"
+			],
+			"cwd": "D:\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Ashley_ShooterEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "Ashley_ShooterEditor Win64 Development Build",
+			"program": "D:\\UE_4.26\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\Unreal_Projects\\Ashley_Shooter\\Ashley_Shooter.uproject"
+			],
+			"cwd": "D:\\UE_4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\UE_4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "D:\\UE_4.26\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=D:\\Unreal_Projects\\Ashley_Shooter\\Ashley_Shooter.uproject",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "D:\\UE_4.26"
+		}
+	]
+}
