@@ -6,7 +6,7 @@
 AAshley_ShooterGameModeBase::AAshley_ShooterGameModeBase()
 {
 	// Set default pawn class to the Witch BP
-	static ConstructorHelpers::FClassFinder<APawn> WitchClassFinder(TEXT("/Game/Witch/BP_Witch"));
+	static ConstructorHelpers::FClassFinder<APawn> WitchClassFinder(TEXT("/Game/Blueprints/BP_Witch"));
 	DefaultPawnClass = WitchClassFinder.Class;
 }
 

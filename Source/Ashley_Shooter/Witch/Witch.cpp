@@ -6,9 +6,11 @@
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Guns/GunBase.h"
+#include "Movement/PlayerMovementComponent.h"
 
 // Sets default values
-AWitch::AWitch()
+AWitch::AWitch(const FObjectInitializer& ObjectInitializer)
+	:Super(ObjectInitializer.SetDefaultSubobjectClass<UPlayerMovementComponent>(ACharacter::CharacterMovementComponentName))
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -79,7 +81,7 @@ void AWitch::BeginPlay()
 
 	// Display a debug message for five seconds. 
 	// The -1 "Key" value argument prevents the message from being updated or refreshed.
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("We are using FPSCharacter."));
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("We are using AWitch."));
 }
 
 // Called every frame
@@ -103,6 +105,8 @@ void AWitch::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	// Set up "action" bindings.
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AWitch::StartJump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AWitch::StopJump);
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AWitch::StartSprinting);
+	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AWitch::StopSprinting);
 }
 
 void AWitch::MoveForward(float Value)
@@ -137,4 +141,22 @@ void AWitch::StartJump()
 void AWitch::StopJump()
 {
     bPressedJump = false;
+}
+
+void AWitch::StartSprinting()
+{
+	UPlayerMovementComponent* MoveComp = Cast<UPlayerMovementComponent>(GetCharacterMovement());
+	if (MoveComp)
+	{
+		MoveComp->SetSprinting(true);
+	}
+}
+
+void AWitch::StopSprinting()
+{
+	UPlayerMovementComponent* MoveComp = Cast<UPlayerMovementComponent>(GetCharacterMovement());
+	if (MoveComp)
+	{
+		MoveComp->SetSprinting(false);
+	}
 }

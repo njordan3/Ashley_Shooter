@@ -13,7 +13,7 @@ class ASHLEY_SHOOTER_API AWitch : public ACharacter
 
 public:
 	// Sets default values for this character's properties
-	AWitch();
+	AWitch(const FObjectInitializer& ObjectInitializer);
 
 protected:
 	// Called when the game starts or when spawned
@@ -26,18 +26,22 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UFUNCTION()
+	UFUNCTION(Category="Custom Movement")
 		void MoveForward(float Value);
-	UFUNCTION()
+	UFUNCTION(Category="Custom Movement")
 		void MoveRight(float Value);
-	UFUNCTION()
+	UFUNCTION(Category="Custom Movement")
 		void Turn(float Value);
-	UFUNCTION()
+	UFUNCTION(Category="Custom Movement")
 		void LookUp(float Value);
-	UFUNCTION()
+	UFUNCTION(Category="Custom Movement")
 		void StartJump();
-	UFUNCTION()
+	UFUNCTION(Category="Custom Movement")
 		void StopJump();
+	UFUNCTION(Category="Custom Movement")
+		void StartSprinting();
+	UFUNCTION(Category="Custom Movement")
+		void StopSprinting();
 
 	UPROPERTY(VisibleAnywhere, Category="Controls")
 		float TurnRate;
